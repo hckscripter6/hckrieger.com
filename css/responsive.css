@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+} 
+ 
+ /* For mobile phones: */
+[class*="col-"] {
+	float: left;
+    width: 100%;
+	
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 850px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+@media only screen and (max-width: 1100px) {
+	div.container {
+		width: 100%;
+	    margin-top: 4em;
+	}
+	
+	article h2,
+	aside h2 {
+		font-size: 1.75em;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	article {
+		margin-right: .75em;
+	}
+	
+	aside {
+		margin-left: .75em;
+	}
+	
+	
+	
+	header h1 {
+		padding: 0;
+		text-align: center;
+	
+	}
+	
+	header {
+		padding: 0
+	}
+	
+	header h1,
+	nav,
+	nav ul
+	{
+		display: block;
+	}
+	
+	nav {
+		
+		text-align: center;
+		position: static;
+	}
+	
+	
+	article p {
+		font-size: .95em;
+	}
+	
+	div.container {
+		margin-top: 4.8em;
+	}
+	
+}
+
+@media only screen and (max-width: 783px) {
+	div.container {
+		margin-top: 4.8em;
+	}
+	
+	article h2 {
+		font-size: 1.5em;
+	}
+}
+
+/*@media screen and (-webkit-min-device-pixel-ratio:0) { 
+	  div.container {
+	    	top: 5em;
+	  }*/
+}
